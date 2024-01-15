@@ -6,5 +6,6 @@ está hecha con React, así mismo cuenta con un sistema de autenticación de usu
 
 - NodeJS
 - VS Code (O cualquier editor o IDE)
+- Dependencias de firebase
 
 ...

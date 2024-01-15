@@ -1,0 +1,71 @@
+/* App.css */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+.root{
+    background-color: #7289da;
+}
+
+.App {
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .auth-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px; 
+    width: 100%;
+    padding: 2rem;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .welcome-container {
+    text-align: center;
+  }
+
+  .loginContainer{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

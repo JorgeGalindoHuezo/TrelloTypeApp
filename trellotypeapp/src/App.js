@@ -1,19 +1,45 @@
 import './App.css';
 
-import Tablero from './Tablero/Tablero';
-import logo from './logo.svg';
+// App.js
+import React, { useState } from 'react';
 
-function App() {
+import InicioSesion from './login';
+import Registro from './registro';
+
+// Importa tu archivo de estilos CSS aquí
+
+const App = () => {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+  };
+
   return (
     <div className="App">
-      <head>
+      <header>
         
-      </head>
-
-      <header className="App-header">
       </header>
+
+      <div className="auth-container">
+        {!isLoggedIn ? (
+          <div className="auth-form">
+            <InicioSesion onLogin={handleLogin} />
+            <Registro />
+          </div>
+        ) : (
+          <div className="welcome-container">
+            <h2>Bienvenido</h2>
+            <button onClick={handleLogout}>Cerrar Sesión</button>
+          </div>
+        )}
+      </div>
     </div>
   );
-}
+};
 
 export default App;
