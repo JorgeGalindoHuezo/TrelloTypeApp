@@ -8,7 +8,7 @@ Asegúrate de tener instalados los siguientes requisitos antes de comenzar:
 
 - [Node.js](https://nodejs.org/)
 - [Visual Studio Code](https://code.visualstudio.com/) o cualquier otro editor de código
-- Dependencias de Firebase
+- [Dependencias de Firebase](https://firebase.google.com/?hl=es-419)
 
 ## Configuración
 
@@ -20,7 +20,7 @@ Ejecuta el siguiente comando para instalar las dependencias del proyecto:
 npm install
 ```
 
-# Configuración de Firebase
+## Configuración de Firebase
 Crea un proyecto en Firebase.
 Copia la configuración de Firebase (apiKey, authDomain, projectId, etc.) desde la consola de Firebase.
 En el archivo src/firebase.js, reemplaza las variables de configuración con los valores de tu proyecto de Firebase.
